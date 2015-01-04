@@ -1,0 +1,214 @@
+body {
+  background:none no-repeat scroll 0 0 #073144;
+  font-size: 16px;
+  margin:0;
+  padding:0;
+}
+* {
+  outline:none;
+  border:0px;
+  margin:0;
+  padding:0;
+}
+::selection {
+  background:#d94246;
+  color:#ffffff;
+}
+
+nav {
+  background:url("../img/over.png") repeat scroll 0 0 transparent;
+  height:100%;
+  left:0;
+  position:fixed;
+  top:0;
+  width:45px;
+  z-index:10;
+  .logo {
+    background:url("../img/sprites.png") no-repeat scroll -149px 0 transparent;
+    display:block;
+    font:0px/0 a;
+    height:45px;
+    position:relative;
+    top:0;
+    transition: transform 1.0s cubic-bezier(1.000, -0.530, 0.405, 1.425);
+  }
+  .buttons {
+    position:relative;
+    top:25%;
+    z-index:15;
+    li {
+      height:45px;
+      a {
+        background:url("../img/sprites.png") no-repeat scroll 0 0 transparent;
+        color:transparent;
+        display:block;
+        font:0px/0 a;
+        height:45px;
+        text-shadow:none;
+        width:45px;
+      }
+    }
+    li.home a {
+      background-color:rgb(0, 55, 126);
+      background-position:-148px -45px;
+    }
+    li.trabajos a {
+      background-color:#f36324;
+      background-position:-148px -90px;
+    }
+    li.clientes a {
+      background-color:#3cb5a2;
+      background-position:-148px -135px;
+    }
+    li.sobre a {
+      background-color:#fe4e50;
+      background-position:-148px -180px;
+    }
+    li.contacto a {
+      background-color:#0c486c;
+      background-position:-148px -225px;
+    }
+    li.blog a {
+      background-color:#ebc805;
+      background-position:-148px -270px;
+    }
+  }
+  .flechas {
+    bottom:0;
+    position:fixed;
+    .subir {
+      background:url("../img/sprites.png") no-repeat scroll -103px 0 transparent;
+      cursor:pointer;
+      display:block;
+      font-size:10px;
+      height:45px;
+      line-height:10px;
+      text-indent:-9999px;
+      width:45px;
+      &:hover {
+        background-position: -103px -45px;
+      }
+    }
+    .bajar {
+      background:url("../img/sprites.png") no-repeat scroll -103px -90px transparent;
+      cursor:pointer;
+      display:block;
+      font-size:10px;
+      height:45px;
+      line-height:10px;
+      text-indent:-9999px;
+      width:45px;
+      &:hover {
+        background-position: -103px -135px;
+      }
+    }
+  }
+  &:hover > .logo {
+    transform: rotate(360deg);
+  }
+}
+
+#Blog {
+  background:none no-repeat scroll 0 0 #ebc805;
+}
+#Clientes {
+  background:none no-repeat scroll 0 0 #3cb5a2;
+}
+#Contacto {
+  background:none no-repeat scroll 0 0 #0c486c;
+}
+#contactoBtn {
+  background:url("../img/sprites.png") no-repeat scroll 0 0 transparent;
+  cursor:pointer;
+  display:block;
+  height:133px;
+  position:fixed;
+  right:0;
+  top:0;
+  width:40px;
+  z-index:10;
+  &:hover {
+    background-position:0 -133px;
+  }
+}
+#Home {
+  background:url("../img/bg_home.png") no-repeat scroll center center rgb(0, 55, 126);
+  #homeContent {
+    overflow: auto;
+    .logo {
+      background: url("../img/logo.png") no-repeat scroll center center transparent;
+      color: transparent;
+      display: block;
+      font: 0/0 arial;
+      height: 134px;
+      margin:0 auto;
+      position:relative;
+      text-shadow: none;
+      transition: all 1.0s cubic-bezier(1.000, -0.530, 0.405, 1.425);
+      width: 201px;
+    }
+    .text {
+      color:#798ca0;
+      font-family: 'PT Sans', sans-serif;
+      font-size:13px;
+      margin:0 auto;
+      padding:30px 0;
+      text-align: justify;
+      transition: all 1.0s ease-in-out;
+      width:400px;
+    }
+    &:hover > .logo {
+      transform: rotate(360deg);
+    }
+    &:hover > .text {
+      color: #FFF;
+      font-size: 1em;
+      padding: 30px 250px 0;
+      width: 500px;
+    }
+  }
+}
+#redes {
+  bottom:10%;
+  position:fixed;
+  right:0;
+  z-index:10;
+  .fb {
+    background:url("../img/sprites.png") no-repeat scroll -199px -59px transparent;
+    display:block;
+    float:right;
+    font-size:10px;
+    height:44px;
+    line-height:10px;
+    margin:0 0 10px;
+    text-indent:-9999px;
+    transition: all 0.5s ease;
+    width:55px;
+  }
+  .tw {
+    background:url("../img/sprites.png") no-repeat scroll -199px 0px transparent;
+    display:block;
+    float:right;
+    font-size:10px;
+    height:44px;
+    line-height:10px;
+    text-indent:-9999px;
+    transition: all 0.5s ease;
+    width:55px;
+  }
+  .fb:hover, .tw:hover {
+    width:147px;
+  }
+}
+#Sobre {
+  background:none no-repeat scroll 0 0 #fe4e50;
+}
+#Trabajos {
+  background:none no-repeat scroll 0 0 #f36324;
+}
+
+.clr {
+  clear:both;
+  height:0px;
+  margin:0;
+}
